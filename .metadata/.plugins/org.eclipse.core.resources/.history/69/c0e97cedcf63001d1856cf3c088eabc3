@@ -1,0 +1,10 @@
+package lecture_basic;
+
+public class reverse_array {
+	public static void main(String[] args) {
+		int[] arr = {12,23,24,21,55,65,45,2};
+		for(int i=arr.length;i>=0;i--) {
+			System.out.println(arr[i]+" ");
+		}
+	}
+}

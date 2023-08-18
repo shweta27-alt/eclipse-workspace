@@ -1,0 +1,19 @@
+package Arrays;
+
+import java.util.Arrays;
+
+public class second_smallest {
+	public static void main(String[] args) {
+		int[] arr = {12, 56, 45, 34,30};
+		int secondmin = arr[0];
+		Arrays.sort(arr);;
+		for(int i=1;i<arr.length;i++) {
+			if(secondmin>arr[i]) {
+				secondmin=arr[i+1];
+			}
+		}
+		
+		System.out.println("second min ele"+ secondmin);
+	}
+
+}

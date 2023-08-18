@@ -1,0 +1,18 @@
+package lecture_basic;
+
+public class largest_value_in_array {
+	public static void main(String[] args) {
+		int[] n= {3,7,2,9,4,1};
+		System.out.println(getlargest(n));
+	}	
+	
+	public static int getlargest(int[] n) {
+		int largest=Integer.MIN_VALUE;
+		for(int i=0;i<n.length;i++) {
+			if(largest<n[i]) {
+				largest=n[i];
+			}
+		}
+		return largest;
+	}
+}

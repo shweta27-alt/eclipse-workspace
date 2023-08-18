@@ -1,0 +1,9 @@
+package Arrays;
+
+public class reverse_array {
+	public static void main(String[] args) {
+		int[] a = {5,3,7,2,9};
+		
+	}
+   
+}

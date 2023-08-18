@@ -1,0 +1,20 @@
+package Numbers;
+import java.util.*;
+
+public class Octal_to_decimal {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the octal no");
+		int octal = sc.nextInt();
+		int n=0;
+		int decimal =0;
+		while(octal>0) {
+			int temp = octal%10;
+			decimal += temp*Math.pow(8,n);
+			octal = octal/10;
+			n++;
+		}
+		System.out.println("decimal is:"+decimal);
+		
+	}	
+}

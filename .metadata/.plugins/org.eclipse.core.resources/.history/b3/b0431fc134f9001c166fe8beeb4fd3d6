@@ -1,0 +1,16 @@
+package Heap;
+
+public class heap_insert_delete {
+    public static void main(String[] args) {
+    	int[] arr = {50,30,40,10,5,20,30};
+    	int n = 10;
+    	int value= 60;
+    	
+    }
+    static void insert(arr[] ,n, value) {
+    	
+    	
+    }
+	
+
+}

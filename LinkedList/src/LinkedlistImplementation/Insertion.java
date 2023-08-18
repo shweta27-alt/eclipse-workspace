@@ -1,0 +1,116 @@
+package LinkedlistImplementation;
+
+class Node{
+	int data;
+	Node next;
+	
+	Node(int x){
+		data=x;
+		next=null;
+	}
+}
+
+public class Insertion {
+	
+	public static void main(String[] args) {
+		Node head = null;
+		head = insertStart(head,12);
+		head = insertStart(head,16);
+		head = insertStart(head,19);
+		head = insertStart(head,20);
+		
+		insertLast(head,10);
+		insertLast(head,14);
+		insertLast(head,15);
+		insertLast(head,13);
+		
+		insertPosition(3,25,head);
+		
+		display(head);
+	}
+	
+	
+	static Node insertStart(Node head, int data) {
+		Node newnode = new Node(data);
+	    newnode.next=head;
+	    head=newnode;
+	    return head;
+	}
+	
+	static void insertLast(Node head,int data) {
+		Node newnode = new Node(data);
+		
+		if(head==null) {
+			head=newnode;
+			return;
+		}
+		Node temp = head;
+		while(temp.next!=null) {
+			temp = temp.next;
+			
+			temp.next = newnode;
+		}
+		
+	}
+	
+	
+	static void insertPosition(int pos, int data, Node head) {
+		int size = calcSize(head);
+		if(pos<1 || size<pos) {
+			System.out.println("can't insert");
+		}
+		else {
+			Node newNode = new Node(data);
+			Node temp = head;
+		
+		
+		while(--pos>0) {
+			temp = temp.next;
+		}
+		
+		 newNode.next = temp.next;
+		 temp.next= newNode;
+		
+		}
+		
+	}
+	
+	
+	static void display (Node node) 
+    {
+    //as linked list will end when Node is Null
+		while (node != null)
+        {
+	        System.out.print (node.data + " ");
+            node = node.next;
+        }
+       System.out.println ();
+    }
+	
+	
+ 
+    static int calcSize (Node node)
+    {
+     int size = 0;
+     while (node != null)
+        {
+            node = node.next;
+            size++;
+        }
+        return size;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

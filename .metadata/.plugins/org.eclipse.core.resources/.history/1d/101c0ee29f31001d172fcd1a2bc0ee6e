@@ -1,0 +1,21 @@
+package Abstract_Classes;
+
+public class Elephant extends Animal{
+	public Elephant(String name){
+		supar(name);
+  }
+
+	@Override
+	public void height() {
+ 	System.out.println("height of an element is 7meters");
+		
+	}
+
+	@Override
+	public void lifeSpan() {
+		System.out.println("lifespan of elephant is 50 yrs");
+		
+	}
+	
+
+}

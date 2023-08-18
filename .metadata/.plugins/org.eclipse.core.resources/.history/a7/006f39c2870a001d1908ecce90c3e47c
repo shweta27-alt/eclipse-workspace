@@ -1,0 +1,23 @@
+package String;
+
+public class duplicate_in_string {
+	public static void main(String[] args) {
+		String D ="greek";
+		int count=0;
+		int n = D.length();
+		for(int i = 0 ; i<n; i++) {
+			for(int j =n-1;j>=0;j--) {
+				if(D(i)==D(j)) {
+					count++;
+				}
+			}
+			System.out.println(count);
+		}
+	}
+
+	private static Object D(int i) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
